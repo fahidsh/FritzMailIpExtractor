@@ -1,18 +1,9 @@
 # FritzMailIpExtractor
 
 ---
-I have a FritzBox router at home and I have configured it to send me emails on router settings changes and on
-change of the IP address. Previously I used a static IP address, but now for long time I am getting a dynamic
-IP address from my ISP. The IP address changes at least once a day, but sometimes it changes more often. I wanted
-to keep track of the IP addresses that were assigned to my router. But the IP addresses were saved in the emails.
-So I wrote this script to extract the IP addresses from the emails and save them to a CSV file, eventually to database.
-I could make the script save the IPs direct to database, but I wanted to keep my script it simple and generic, use
-the least amount of dependencies and make it easy to understand and modify. So I decided to save the IPs to a CSV file.
+I have a FritzBox router at home and I have configured it to send me emails on router settings changes and on change of the IP address. Previously I used a static IP address, but now for long time I am getting a dynamic IP address from my ISP. The IP address changes at least once a day, but sometimes it changes more often. I wanted to keep track of the IP addresses that were assigned to my router. But the IP addresses were saved in the emails. So I wrote this script to extract the IP addresses from the emails and save them to a CSV file, eventually to database. I could make the script save the IPs direct to database, but I wanted to keep my script it simple and generic, use the least amount of dependencies and make it easy to understand and modify. So I decided to save the IPs to a CSV file.
 
-The subject of the email contains the IP addresses and the date of the email contains the date and time when the
-IP address was assigned to the router. The script reads the emails from the IMAP server and extracts the IP addresses
-and the date and time from the email subject and date. Then it saves the IP addresses and the date and time to a
-CSV file.
+The subject of the email contains the IP addresses and the date of the email contains the date and time when the IP address was assigned to the router. The script reads the emails from the IMAP server and extracts the IP addresses and the date and time from the email subject and date. Then it saves the IP addresses and the date and time to a CSV file.
 
 ---
 ## Examples of the email subject and date
